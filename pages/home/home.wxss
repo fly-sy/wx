@@ -1,15 +1,29 @@
+.banner {
+  height: 380rpx;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
 .grids {
+  /* 默认是横向布局 */
   display: flex;
+  /* 换行 */
   flex-wrap: wrap;
   border-top: 1rpx solid #eee;
-  border-left: 1rpx solid #eee;
-  background-color: #fff;
+  border-left: 1rpx solid #eee; 
+  background-color: #fff; 
 }
 
 .grids .item {
   display: flex;
+  /* 改为纵向布局 */
   flex-direction: column;
+  /* x轴居中 */
   justify-content: center;
+  /* y轴居中 */
   align-items: center;
   width: 33.3333333333%;
   height: 250rpx;

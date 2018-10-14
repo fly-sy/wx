@@ -1,9 +1,9 @@
-<swiper>
+<swiper class="banner">
   <swiper-item>
-    <image src="https://static.maizuo.com/pc/v5/h5PicUpload/062a965ab71db31fe0b7ad6f8c529935.jpg"/>
+    <image mode="aspectFill" src="https://static.maizuo.com/pc/v5/h5PicUpload/062a965ab71db31fe0b7ad6f8c529935.jpg"/>
   </swiper-item>
   <swiper-item>
-    <image src="https://static.maizuo.com/pc/v5/h5PicUpload/062a965ab71db31fe0b7ad6f8c529935.jpg"/>
+    <image mode="aspectFill" src="https://static.maizuo.com/pc/v5/h5PicUpload/062a965ab71db31fe0b7ad6f8c529935.jpg"/>
   </swiper-item>
 </swiper>
 
