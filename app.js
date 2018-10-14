@@ -3,10 +3,10 @@ App({
 
   },
   // options 路径对象 
-  onShow: function (options) {
-    console.log(options)
+  onShow: function () {
+    console.log()
   },
-  onHide: function (options) {
-    console.log(options)
+  onHide: function () {
+    console.log()
   }
 })

@@ -1,1 +1,24 @@
-/* pages/home/home.wxss */
+.grids {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1rpx solid #eee;
+  border-left: 1rpx solid #eee;
+  background-color: #fff;
+}
+
+.grids .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333333333%;
+  height: 250rpx;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;
+}
+
+.grids .item image {
+  width: 70rpx;
+  height: 70rpx;
+}

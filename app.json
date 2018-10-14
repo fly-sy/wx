@@ -1,27 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/message/message",
+    "pages/profile/profile"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#3a4861",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "color": "#666",
+    "selectedColor": "#999",
+    "borderStyle": "black",
     "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "index",
-        "iconPath": "assets/tabbar/board.png",
-        "selectedIconPath": "assets/tabbar/board-actived.png"
-      },
       {
         "pagePath": "pages/home/home",
         "text": "home",
-        "iconPath": "assets/tabbar/home.png",
-        "selectedIconPath": "assets/tabbar/home-actived.png"
+        "iconPath": "/assets/tabs/home.png",
+        "selectedIconPath": "/assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "message",
+        "iconPath": "/assets/tabs/message.png",
+        "selectedIconPath": "/assets/tabs/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "profile",
+        "iconPath": "/assets/tabs/profile.png",
+        "selectedIconPath": "/assets/tabs/profile-active.png"
       }
     ]
   }
