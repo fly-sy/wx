@@ -1,48 +1,17 @@
 <swiper class="banner">
-  <swiper-item>
-    <image mode="aspectFill" src="https://static.maizuo.com/pc/v5/h5PicUpload/062a965ab71db31fe0b7ad6f8c529935.jpg"/>
-  </swiper-item>
-  <swiper-item>
-    <image mode="aspectFill" src="https://static.maizuo.com/pc/v5/h5PicUpload/062a965ab71db31fe0b7ad6f8c529935.jpg"/>
+  <swiper-item wx:for="{{slides}}" wx:key="id">
+    <!-- 第一张后台默认就没有给路径的跳转 -->
+    <navigator url="{{item.link}}" wx:if="{{item.link}}">
+        <image mode="aspectFill" src="{{item.image}}"/>
+    </navigator>
+    <!--  mode="aspectFill" 给图片设置剪切效果 高度不满足的时候-->
+    <image wx:else mode="aspectFill" src="{{item.image}}"/>
   </swiper-item>
 </swiper>
 
 <view class="grids">
-  <view class="item">
-    <image src="/assets/icons/grid-01.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-02.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-03.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-04.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-05.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-06.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-07.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-08.png" />
-    <text>美食</text>
-  </view>
-  <view class="item">
-    <image src="/assets/icons/grid-09.png" />
-    <text>美食</text>
-  </view>
-
+  <navigator  class="item" wx:for="{{categories}}" wx:key="id" url="/pages/list/list?cat={{item.id}}">
+    <image src="{{item.icon}}" />
+    <text>{{item.name}}</text>
+  </navigator>
 </view>

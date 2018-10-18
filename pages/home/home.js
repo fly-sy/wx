@@ -1,29 +1,40 @@
+const fetch = require('../../utils/fetch.js')
+
 Page({
   data: {
-    
+    slides: [],
+    categories: []
   },
-  onLoad: function(options) {
-    //Do some initialize when page load.
-    
+  onLoad: function (options) {
+    fetch('slides').then(res => {
+      this.setData({
+        slides: res.data
+      })
+    })
+    fetch('categories').then(res => {
+      this.setData({
+        categories: res.data
+      })
+    })
   },
-  onReady: function() {
+  onReady: function () {
     //Do some when page ready.
-    
+
   },
-  onShow: function() {
+  onShow: function () {
     //Do some when page show.
-    
+
   },
-  onHide: function() {
+  onHide: function () {
     //Do some when page hide.
-    
+
   },
-  onUnload: function() {
+  onUnload: function () {
     //Do some when page unload.
-    
+
   },
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
     //Do some when page pull down.
-    
+
   }
 })
